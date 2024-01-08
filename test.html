@@ -4,6 +4,8 @@
       <script>
             const onLinkClicked = (e) => {
                   e.preventDefault()
+
+                  console.log("Link Clicked")
                   const curl =  window.open("exos://rpn.bozztv.com/ebstv/ebscinema/tracks-v1a1/mono.m3u8");
                   if (!curl){
                   const ccurl =  window.open("market://details?id=com.ytv.pronew", "_blank");
@@ -14,6 +16,6 @@
             }
       </script>
       
-      <a href="#" onClick="onLinkClicked()">Click Me</a>
+      <button onClick="onLinkClicked()">Click Me</button>
 </body>
 </html>
