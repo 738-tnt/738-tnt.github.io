@@ -2,19 +2,20 @@
 <body>
 
       <script>
-            const onLinkClicked = () => {
-                  console.log("Link Clicked")
-                  const curl =  window.open("exos://rpn.bozztv.com/ebstv/ebscinema/tracks-v1a1/mono.m3u8");
-                  if (!curl){
-                  const ccurl =  window.open("market://details?id=com.ytv.pronew", "_blank");
-                  
-                  if(!ccurl){                        
-                  window.open("https://play.google.com/store/apps/details?id=id=com.ytv.pronew");
-                  }
-            }
-            }
+            function openLink() {
+    var mainurl = "exos://rpn.bozztv.com/ebstv/ebscinema/tracks-v1a1/mono.m3u8";
+    var fallbackUrl = "https://play.google.com/store/apps/details?id=com.tnt.guess_the_player";
+
+    // Attempt to open the Telegram URL
+    window.open(mainurl, "_blank");
+
+    // If the Telegram URL fails to open, open the fallback URL
+    setTimeout(function() {
+      window.location.href = fallbackUrl;
+    }, 1000); // Adjust the delay as needed
+  }
       </script>
       
-      <button onClick="onLinkClicked()">Click Me</button>
+      <a href="#" onClick="openLink()">Click Me</a>
 </body>
 </html>
