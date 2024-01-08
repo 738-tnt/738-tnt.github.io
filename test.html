@@ -2,11 +2,18 @@
 <body>
 
       <script>
-            const onLinkClicked = () => {
-                  window.open("https://play.google.com/store/apps/details?id=com.tnt.guess_the_player", "_blank");
+            const onLinkClicked = (e) => {
+                  e.preventDefault()
+                  const curl =  window.open("exos://rpn.bozztv.com/ebstv/ebscinema/tracks-v1a1/mono.m3u8");
+                  if (!curl){
+                  const ccurl =  window.open("market://details?id=com.ytv.pronew", "_blank");
+                  
+                  if(!ccurl){                        
+                  window.open("https://play.google.com/store/apps/details?id=id=com.ytv.pronew");
+                  }
             }
       </script>
       
-      <a href="exos://rpn.bozztv.com/ebstv/ebscinema/tracks-v1a1/mono.m3u8" onClick="onLinkClicked()">Click Me</a>
+      <a onClick="onLinkClicked()">Click Me</a>
 </body>
 </html>
