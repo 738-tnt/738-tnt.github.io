@@ -34,8 +34,14 @@ const getIframeSrc = async () => {
 const main = async () => {
   try {
     await addAxios()
-    const m = await getIframeSrc()
-    return m
+
+    if(player){
+
+    }
+    else{
+      const m = await getIframeSrc()
+      return m
+    }    
   }
   catch (e) {
     console.log(e)
