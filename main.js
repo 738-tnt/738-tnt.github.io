@@ -21,7 +21,7 @@ const getIframeSrc = async () => {
 
 const main = async () => {
   try {
-    const m = await fetchData()
+    const m = await getIframeSrc()
     return m
   }
   catch (e) {
