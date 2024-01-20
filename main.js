@@ -84,6 +84,13 @@ const main = async () => {
     if (urlToBeParsed.includes("score808")) {
       return await parseScore808()
     }
+
+    else if (urlToBeParsed.includes("fmovies")) {
+      // Implement parser for fmovies
+      return null
+    }
+
+    
     return null
 
   }
