@@ -23,7 +23,7 @@ const main = async () => {
     return iframeUrl;
   }
   catch (e) {
-    return e.message
+    return e
   }
 }
 
