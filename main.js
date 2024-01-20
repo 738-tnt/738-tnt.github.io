@@ -18,8 +18,13 @@ const getIframeSrc = async (url) => {
 };
 
 const main = async () => {
+	try{
 	const iframeUrl = await getIframeSrc(urlToBeParsed)
         return iframeUrl;
+	}
+	catch(e){
+		return e.message
+	}
 }
 
 main()
