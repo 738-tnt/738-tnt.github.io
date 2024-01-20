@@ -17,14 +17,11 @@ const getIframeSrc = async () => {
   try {
     const r = await axios.get("/site-pages/CHTV31");
     const htmlString = r.data;
-
-
-
-    return "htmlString"
-
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
     const iframeSrc = doc.querySelector("iframe").src;
+
+    return iframeSrc
 
     //console.log(iframeSrc);
   } catch (error) {
