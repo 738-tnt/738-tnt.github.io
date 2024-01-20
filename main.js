@@ -1,3 +1,7 @@
-var url = "https://www.google.com/";
+var urlToBeParsed = "<<URL_TO_BE_PARSED>>";
 
-url;
+
+setTimeout(() => {
+        var data = "Some data";
+        window.AndroidInterface.sendData(urlToBeParsed);
+    }, 5000);
