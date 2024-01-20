@@ -11,7 +11,7 @@ const getIframeSrc = async () => {
     const iframeSrc = doc.querySelector("iframe").src;
 
     //console.log(iframeSrc);
-    return iframeSrc
+    return htmlString
   } catch (error) {
     return null
   }
@@ -26,7 +26,7 @@ const main = async () => {
   }
   catch (e) {
     console.log(e)
-    return null
+    return "nullsdsd"
   }
 
 }
