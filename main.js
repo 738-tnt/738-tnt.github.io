@@ -45,6 +45,11 @@ const getPlayerSrc = () => {
   }
 }
 
+const isValidURL = (url) => {
+  const pattern = /^(https?:\/\/)?[\w.-]+\.[a-zA-Z]{2,}(\/.*)*$/;
+  return pattern.test(url);
+}
+
 
 const main = async () => {
   try {
@@ -58,7 +63,7 @@ const main = async () => {
     else {
       const m = await getIframeSrc(window.location.href)
 
-      if (!m) {
+      if (!m || !isValidURL(m)) {
         return -1;
       }
 
