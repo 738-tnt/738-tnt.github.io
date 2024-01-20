@@ -50,15 +50,25 @@ const isValidURL = (url) => {
   return pattern.test(url);
 }
 
+function getBaseURL() {
+  return window.location.protocol + "//" + window.location.host;
+}
+
 
 const main = async () => {
   try {
     await addAxios()
 
 
-    const playerSrc = getPlayerSrc();
+    const src = getPlayerSrc();
+    const referer = getBaseURL();
+
     if (playerSrc) {
-      return playerSrc
+      const data = {
+        referer,
+        src
+      }
+      return data
     }
     else {
       const m = await getIframeSrc(window.location.href)
