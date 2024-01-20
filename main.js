@@ -63,7 +63,7 @@ const main = async () => {
     const src = getPlayerSrc();
     const referer = getBaseURL();
 
-    if (playerSrc) {
+    if (src) {
       const data = {
         referer,
         src
