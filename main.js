@@ -29,17 +29,14 @@ const getIframeSrc = async (url) => {
   }
 }
 
-const getPlayerSrc = () => {
-  try {
+const getPlayer = () => {
+  try{
 
     let src = player._options.sources[0].source
-    // if (!src) {
-    //   let src = player._options.sources[0]
-    // }
 
     return src;
   }
-  catch (error) {
+  catch(error){
     return null
   }
 }
@@ -49,15 +46,15 @@ const main = async () => {
   try {
     await addAxios()
 
-
-    const playerSrc = getPlayerSrc();
-    if (playerSrc) {
-      return playerSrc
+    
+    const playerSrc = getPlayer();
+    if(playerSrc){
+        return playerSrc
     }
-    else {
+    else{
       const m = await getIframeSrc(window.location.href)
 
-      if (!m) {
+      if(!m){
         return -1;
       }
 
@@ -67,7 +64,8 @@ const main = async () => {
 
   }
   catch (e) {
-    return null
+    console.log(e)
+    return "nullsdsd"
   }
 
 }
