@@ -13,7 +13,7 @@ const getIframeSrc = async (url) => {
     return iframeSrc.src
   } catch (error) {
 	  console.log(error)
-    return null;
+    return error;
   }
 };
 
