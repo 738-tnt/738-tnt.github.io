@@ -15,7 +15,7 @@ const addAxios = () => {
 
 const getIframeSrc = async () => {
   try {
-    const r = await axios.get("/site-pages/CHTV31");
+    const r = await axios.get(urlToBeParsed);
     const htmlString = r.data;
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
