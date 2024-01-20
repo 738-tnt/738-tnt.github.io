@@ -33,7 +33,7 @@ const cplayer = () => {
   try{
     return player;
   }
-  catch(){
+  catch(error){
     return null
   }
 }
