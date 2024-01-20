@@ -3,7 +3,7 @@ const urlToBeParsed = "<<URL_TO_BE_PARSED>>";
 
 const getIframeSrc = async() => {
   try {
-    const r = await axios.get("https://score808.us/site-pages/CHTV31");
+    const r = await axios.get(urlToBeParsed);
     const htmlString = r.data;
 
     const parser = new DOMParser();
