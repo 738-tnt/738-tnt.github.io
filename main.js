@@ -68,7 +68,7 @@ const main = async () => {
         referer,
         src
       }
-      return data
+      return JSON.stringify(data)
     }
     else {
       const m = await getIframeSrc(window.location.href)
