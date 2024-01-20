@@ -13,9 +13,9 @@ const addAxios = () => {
 }
 
 
-const getIframeSrc = async () => {
+const getIframeSrc = async (url) => {
   try {
-    const r = await axios.get(urlToBeParsed);
+    const r = await axios.get(url);
     const htmlString = r.data;
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
@@ -29,7 +29,7 @@ const getIframeSrc = async () => {
   }
 }
 
-const cplayer = () => {
+const getPlayer = () => {
   try{
     return player;
   }
@@ -43,14 +43,22 @@ const main = async () => {
   try {
     await addAxios()
 
-    const player = cplayer();
+    
+    const player = getPlayer();
     if(player){
-
+        return player._options.sources[0].source
     }
     else{
-      const m = await getIframeSrc()
-      return m
-    }    
+      const m = await getIframeSrc(window.location.href)
+
+      if(!m){
+        return "Unable to get url";
+      }
+
+      window.location.href = m;
+    }
+
+
   }
   catch (e) {
     console.log(e)
