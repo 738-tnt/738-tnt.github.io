@@ -29,12 +29,21 @@ const getIframeSrc = async () => {
   }
 }
 
+const cplayer = () => {
+  try{
+    return player;
+  }
+  catch(){
+    return null
+  }
+}
 
 
 const main = async () => {
   try {
     await addAxios()
 
+    const player = cplayer();
     if(player){
 
     }
