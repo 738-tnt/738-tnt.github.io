@@ -6,12 +6,14 @@ const getIframeSrc = async () => {
     const r = await axios.get("https://score808.us/site-pages/CHTV31");
     const htmlString = r.data;
 
+    
+    return htmlString
+
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
     const iframeSrc = doc.querySelector("iframe").src;
 
     //console.log(iframeSrc);
-    return htmlString
   } catch (error) {
     return null
   }
