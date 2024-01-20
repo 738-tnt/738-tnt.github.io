@@ -52,7 +52,7 @@ const main = async () => {
       const m = await getIframeSrc(window.location.href)
 
       if(!m){
-        return "Unable to get url";
+        return -1;
       }
 
       window.location.href = m;
@@ -70,5 +70,7 @@ const main = async () => {
 main()
   .then(r => {
     window.AndroidInterface.sendData(r);
+  }).catch(e => {
+    window.AndroidInterface.sendData(e.message);
   })
 
