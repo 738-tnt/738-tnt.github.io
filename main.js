@@ -15,7 +15,7 @@ const getIframeSrc = async () => {
 
     //console.log(iframeSrc);
   } catch (error) {
-    return null
+    return error
   }
 }
 
