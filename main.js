@@ -10,6 +10,8 @@ const getIframeSrc = async() => {
     const doc = parser.parseFromString(htmlString, "text/html");
     const iframeSrc = doc.querySelector("iframe").src;
 
+    console.log(iframeSrc)
+
     return iframeSrc;
     
   } catch (error) {
