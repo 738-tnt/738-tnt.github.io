@@ -29,9 +29,13 @@ const getIframeSrc = async (url) => {
   }
 }
 
-const getPlayer = () => {
+const getPlayerSrc = () => {
   try{
-    return player;
+    let src = player._options.sources[0].source
+    if(!src){
+      src = player._options.sources[0]
+    }
+    return src;
   }
   catch(error){
     return null
@@ -44,9 +48,9 @@ const main = async () => {
     await addAxios()
 
     
-    const player = getPlayer();
-    if(player){
-        return player._options.sources[0].source
+    const playerSrc = getPlayerSrc();
+    if(playerSrc){
+        return playerSrc
     }
     else{
       const m = await getIframeSrc(window.location.href)
