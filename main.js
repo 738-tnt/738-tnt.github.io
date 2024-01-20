@@ -54,37 +54,42 @@ function getBaseURL() {
   return window.location.protocol + "//" + window.location.host;
 }
 
+const parseScore808 = async () => {
+  const src = getPlayerSrc();
+  const referer = getBaseURL();
+
+  if (src) {
+    const data = {
+      referer,
+      src
+    }
+    return JSON.stringify(data)
+  }
+  else {
+    const m = await getIframeSrc(window.location.href)
+
+    if (!m || !isValidURL(m)) {
+      return -1;
+    }
+
+    window.location.href = m;
+  }
+}
+
 
 const main = async () => {
   try {
     await addAxios()
 
-
-    const src = getPlayerSrc();
-    const referer = getBaseURL();
-
-    if (src) {
-      const data = {
-        referer,
-        src
-      }
-      return JSON.stringify(data)
+    if (urlToBeParsed.includes("score808")) {
+      return await parseScore808()
     }
-    else {
-      const m = await getIframeSrc(window.location.href)
-
-      if (!m || !isValidURL(m)) {
-        return -1;
-      }
-
-      window.location.href = m;
-    }
-
+    return null
 
   }
   catch (e) {
     console.log(e)
-    return "nullsdsd"
+    return null
   }
 
 }
