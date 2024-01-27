@@ -9,8 +9,8 @@
       {
          "enabled": true,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
-         "visitUrl": "https://play.google.com/store/apps/details?id=com.news.bbcamharic",
-         "targetIndex": 0,
+         "visitUrl": "https://www.google.com",
+         "targetIndex": 1,
          "bgfillcolor": "#EABA40"
       }
    ],
