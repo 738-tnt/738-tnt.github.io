@@ -1,10 +1,15 @@
 {
+   "target": [
+      "app",
+      "website",
+      "youtube"
+   ],
    "banner": [
       {
          "enabled": true,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
          "visitUrl": "https://woafoame.net/4/6151091",
-         "target": "app",
+         "targetIndex": 0,
          "bgfillcolor": "#EABA40"
       }
    ],
@@ -13,7 +18,7 @@
          "enabled": true,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
          "visitUrl": "https://woafoame.net/4/6151091",
-         "target": "app",
+         "targetIndex": 0,
          "bgfillcolor": "#EABA40"
       }
    ]
