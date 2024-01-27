@@ -17,7 +17,7 @@
    "interstitial": [
       {
          "enabled": true,
-         "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
+         "imageUrl": "https://picsum.photos/600/900",
          "visitUrl": "https://woafoame.net/4/6151091",
          "target": "app",
          "bgfillcolor": "#EABA40"
