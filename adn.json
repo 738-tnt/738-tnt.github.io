@@ -1,19 +1,20 @@
 {
-  "banner": [
-    {
-      "enabled": true,
-      "imageUrl": "https://woafoame.net/4/6151091",
-      "target": "app",
-      "bgfillcolor": "#EABA40"
-    }
-  ],
-  "interstitial": [
-    {
-      "enabled": true,
-      "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
-      "visitUrl": "https://woafoame.net/4/6151091",
-      "target": "app",
-      "bgfillcolor": "#EABA40"
-    }
-  ]
+   "banner": [
+      {
+         "enabled": true,
+         "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
+         "visitUrl": "https://woafoame.net/4/6151091",
+         "target": "app",
+         "bgfillcolor": "#EABA40"
+      }
+   ],
+   "interstitial": [
+      {
+         "enabled": true,
+         "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
+         "visitUrl": "https://woafoame.net/4/6151091",
+         "target": "app",
+         "bgfillcolor": "#EABA40"
+      }
+   ]
 }
