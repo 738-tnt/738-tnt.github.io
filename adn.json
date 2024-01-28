@@ -10,7 +10,7 @@
          "enabled": true,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
          "visitUrl": "https://www.youtube.com/watch?v=ZcKohelilGk",
-         "target": "youtube",
+         "target": "website",
          "bgfillcolor": "#EABA40"
       }
    ],
