@@ -1,5 +1,5 @@
 {
-   "adsEnabled": false,
+   "adsEnabled": true,
    "targets": [
       "app",
       "website",
@@ -8,16 +8,16 @@
    "banner": [
       {
          "enabled": true,
-         "imageUrl": "https://raw.githubusercontent.com/738-tnt/adn/main/oromo_money_ads.png",
-         "visitUrl": "https://www.google.com/",
-         "target": "website",
+         "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/guess_the_player_banner.png",
+         "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.guess_the_player",
+         "target": "app",
          "bgfillcolor": "#EABA40"
       }
    ],
    "interstitial": [
       {
          "enabled": true,
-         "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/ronaldo.png",
+         "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/guess_the_playe_intestitial.png",
          "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.guess_the_player",
          "target": "app",
          "bgfillcolor": "#EABA40"
