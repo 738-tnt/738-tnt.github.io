@@ -19,6 +19,13 @@
          "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.ethiopianmusic",
          "target": "app",
          "bgfillcolor": "#EABA40"
+      },
+      {
+         "enabled": true,
+         "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/youtube_banner.png",
+         "visitUrl": "https://www.youtube.com/watch?v=r0XeT6bxmlA",
+         "target": "youtube",
+         "bgfillcolor": "#EABA40"
       }
    ],
    "interstitial": [
@@ -34,6 +41,13 @@
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/Ethiopian_Music_Interstitial.png",
          "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.ethiopianmusic",
          "target": "app",
+         "bgfillcolor": "#EABA40"
+      },
+      {
+         "enabled": true,
+         "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/Youtube_interstitial.png",
+         "visitUrl": "https://www.youtube.com/watch?v=r0XeT6bxmlA",
+         "target": "youtube",
          "bgfillcolor": "#EABA40"
       }
    ]
