@@ -21,7 +21,7 @@
          "bgfillcolor": "#EABA40"
       },
       {
-         "enabled": true,
+         "enabled": false,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/ethiopian_music_banner.png",
          "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.oromomusic",
          "target": "app",
@@ -44,7 +44,7 @@
          "bgfillcolor": "#EABA40"
       },
       {
-         "enabled": true,
+         "enabled": false,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/oromo_music_interstitial.png",
          "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.oromomusic",
          "target": "app",
