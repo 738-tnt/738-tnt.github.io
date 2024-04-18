@@ -6,13 +6,7 @@
       "youtube"
    ],
    "banner": [
-           {
-         "enabled": false,
-         "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/ethiopian_music_banner.png",
-         "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.ethiopianmusic",
-         "target": "app",
-         "bgfillcolor": "#EABA40"
-      },
+          
       {
          "enabled": true,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/youtube_banner.png",
@@ -36,13 +30,7 @@
       }
    ],
    "interstitial": [
-       {
-         "enabled": false,
-         "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/Ethiopian_Music_Interstitial.png",
-         "visitUrl": "https://play.google.com/store/apps/details?id=com.tnt.ethiopianmusic",
-         "target": "app",
-         "bgfillcolor": "#EABA40"
-      },
+      
       {
          "enabled": true,
          "imageUrl": "https://raw.githubusercontent.com/738-tnt/738-tnt.github.io/main/images/Youtube_interstitial.png",
