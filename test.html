@@ -10,7 +10,9 @@
   referer:"https://stylisheleg4nt.com/"
       }
 
-                  const finalUrl = mainurl + Object.entries(parameters).map(e => e.join('=')).join('&')
+                  const q = mainurl.includes("?")?"&":"?"
+                  
+                  const finalUrl = mainurl + q + Object.entries(parameters).map(e => e.join('=')).join('&')
 
                   console.log({finalUrl})
                   
