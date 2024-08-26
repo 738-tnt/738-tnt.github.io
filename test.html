@@ -12,13 +12,13 @@
 
                   const q = mainurl.includes("?")?"&":"?"
                   
-                 // const finalUrl = mainurl + q + Object.entries(parameters).map(e => e.join('=')).join('&')
-                     const finalUrl = "https://msn.com"
+                  const finalUrl = mainurl + q + Object.entries(parameters).map(e => e.join('=')).join('&')
+                    // const finalUrl = "https://msn.com"
                   console.log({finalUrl})
                   
       //var mainurl = "ovpp://score808.us/site-pages/CH5";
     // var fallbackUrl = "intent://#Intent;package=com.tnt.guess_the_player;scheme=ncovidtracker;launchFlags=268435456;end;";
-    var fallbackUrl = `intent://#Intent;packages=com.zhiliaoapp.musically.go;scheme=${finalUrl};end;`;           
+    var fallbackUrl = `intent://#Intent;packages=com.venomdino.exonetworkstreamer;scheme=ovpp://${finalUrl};end;`;           
 
       window.location.href = fallbackUrl;
   }
