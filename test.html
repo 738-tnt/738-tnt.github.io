@@ -4,7 +4,9 @@
       <script>
             function openLink() {
     // var mainurl = "ovpp://rpn.bozztv.com/ebstv/ebscinema/tracks-v1a1/mono.m3u8?referer=youtube.com&isworking=true";
-      var mainurl = "https://off5.hamaradilhai.com:999/hls/premieruk.m3u8?md5=Se-Ffs0HKvoDppcWJ24AmA&expires=1724619701";
+
+      const expires = (Date.now() + (2 * 60 * 60 * 1000)).toString();
+      var mainurl = "https://off5.hamaradilhai.com:999/hls/premieruk.m3u8?md5=Se-Ffs0HKvoDppcWJ24AmA&expires="+expires;
 
       const parameters = {
   referer:"https://stylisheleg4nt.com/"
