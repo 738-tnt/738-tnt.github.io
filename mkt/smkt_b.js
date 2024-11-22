@@ -2,6 +2,6 @@ const deliveryData = {"cacheVersion":"1.2.17","deliveryData":{"deliveryDetailsIn
 const deliveryState = {"searchInput":"vaasa","address":{"title":"S-market Gerby noutolokero","street":"Västervikintie 2","postalCode":"65280","city":"Vaasa","location":{"latitude":63.13096,"longitude":21.6029}},"method":"PICKUP"}
 const storeData = {"cacheVersion":"1.2.17","storeData":{"deliveryStore":{"__typename":"DeliveryStore","brand":"s-market","id":"639126291","name":"S-market Gerby","areaId":"3cd711ea-89b6-44ec-8a97-3ec33e709fbf"},"storeId":"639126291","selectedBrand":"s-market"}}
 
-sessionStorage.setItem("delivery-data", JSON.stringify(deliveryData))
-sessionStorage.setItem("delivery-state", JSON.stringify(deliveryState))
-sessionStorage.setItem("store-data", JSON.stringify(storeData))
+localStorage.setItem("delivery-data", JSON.stringify(deliveryData))
+localStorage.setItem("delivery-state", JSON.stringify(deliveryState))
+localStorage.setItem("store-data", JSON.stringify(storeData))
