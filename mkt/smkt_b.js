@@ -1,4 +1,5 @@
 window.onload = function() {
+  alert("Window loaded");
   document.getElementById('checkoutbutton').style.display = 'none';
   const checkoutButton = document.querySelector('[data-test-id="checkout-button"]');
       if (checkoutButton) {
