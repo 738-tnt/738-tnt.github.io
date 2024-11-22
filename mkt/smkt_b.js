@@ -1,3 +1,8 @@
+window.onload = function() {
+  document.getElementById('checkoutbutton').style.display = 'none';
+}
+
+
 localStorage.setItem('uc_user_interaction', 'true');
 
 localStorage.setItem('store-data', JSON.stringify({
