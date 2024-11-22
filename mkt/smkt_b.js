@@ -1,0 +1,2 @@
+const deliveryData = {"cacheVersion":"1.2.17","deliveryData":{"deliveryDetailsInfo":{"__typename":"DeliveryDetailsInfo","additionalInfo":"","address":"","addressLine1":"","addressLine2":null,"city":"Vaasa","deliveryDate":"2024-11-27","deliveryMethod":"PICKUP","deliveryTime":"10.00","deliverySlotId":"2024-11-27:2c4513e9-71b1-4331-a810-436286223bed","postalCode":"65320","location":null,"deliverySlotPrice":6.9},"selectedAreaId":"7fe64d66-11c4-46d4-937b-f2ec3bd1afd0"}}
+sessionStorage.setItem("delivery-data", JSON.stringify(deliveryData));
